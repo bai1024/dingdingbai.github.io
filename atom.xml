@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Hello</title>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-21T10:46:34.000Z</updated>
+  <updated>2016-08-22T07:36:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,26 +16,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>How to build your bolg On GitHub Pages</title>
     <link href="http://yoursite.com/2016/08/21/hello-world/"/>
     <id>http://yoursite.com/2016/08/21/hello-world/</id>
     <published>2016-08-21T10:46:34.000Z</published>
-    <updated>2016-08-21T10:46:34.000Z</updated>
+    <updated>2016-08-22T07:36:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h2 id="创建git仓库"><a href="#创建git仓库" class="headerlink" title="创建git仓库"></a>创建git仓库</h2><h3 id="创建以“username-github-io”格式为名字的仓库"><a href="#创建以“username-github-io”格式为名字的仓库" class="headerlink" title="创建以“username.github.io”格式为名字的仓库"></a>创建以“username.github.io”格式为名字的仓库</h3><h3 id="在本地建立一个以“Blog”为名字的文件夹"><a href="#在本地建立一个以“Blog”为名字的文件夹" class="headerlink" title="在本地建立一个以“Blog”为名字的文件夹"></a>在本地建立一个以“Blog”为名字的文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo</div></pre></td></tr></table></figure>
+<h3 id="hexoinit"><a href="#hexoinit" class="headerlink" title="$ hexoinit"></a>$ hexoinit</h3><p>Hexo随后会自动在目标文件夹建立网站所需要的所有文件。</p>
+<h3 id="可以到hexo官网寻找喜欢的主题，根据作者的提示安装"><a href="#可以到hexo官网寻找喜欢的主题，根据作者的提示安装" class="headerlink" title="可以到hexo官网寻找喜欢的主题，根据作者的提示安装"></a>可以到hexo官网寻找喜欢的主题，根据作者的提示安装</h3><h3 id="在-config-yml文件中配置deploy"><a href="#在-config-yml文件中配置deploy" class="headerlink" title="在_config.yml文件中配置deploy"></a>在_config.yml文件中配置deploy</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: //输入“username.github.io<span class="string">"仓库的shh</span></div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<h3 id="安装deployer插件"><a href="#安装deployer插件" class="headerlink" title="安装deployer插件"></a>安装deployer插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h3 id="在推到github仓库前可以查看网站状态"><a href="#在推到github仓库前可以查看网站状态" class="headerlink" title="在推到github仓库前可以查看网站状态"></a>在推到github仓库前可以查看网站状态</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<h3 id="最后推送"><a href="#最后推送" class="headerlink" title="最后推送"></a>最后推送</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;h2 id=&quot;创建git仓库&quot;&gt;&lt;a href=&quot;#创建git仓库&quot; class=&quot;headerlink&quot; title=&quot;创建git仓库&quot;&gt;&lt;/a&gt;创建git仓库&lt;/h2&gt;&lt;h3 id=&quot;创建以“username-github-io”格式为名字的仓库&quot;&gt;&lt;a href=&quot;#创建
     
     </summary>
     
